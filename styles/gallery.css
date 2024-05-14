@@ -233,9 +233,13 @@ a.site-name {
 		/* grid-template-columns: 18.75rem 18.75rem 18.75rem; */
 	
 	/* create 3 colums f equal width to full the grid cotainer */
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
 
+	/* create three colums, first two 300px and the last one will fill the ramining space */
+	/* teh two will repeat the two first cloums */
 
+	grid-template-columns: repeat(2, 18.75rem) 1fr;
 
 		/* wwe want to create two rows, 200px height each */
 		/* grid-template-rows: 12.5rem 12.5rem; */
