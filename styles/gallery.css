@@ -229,7 +229,14 @@ a.site-name {
 		/* create a grid, make all children items */
 		display: grid;
 		/* create thre colums */
-    grid-template-columns: 18.75rem 18.75rem 18.75rem;
+   
+		/* grid-template-columns: 18.75rem 18.75rem 18.75rem; */
+	
+	/* create 3 colums f equal width to full the grid cotainer */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
 		/* wwe want to create two rows, 200px height each */
 		/* grid-template-rows: 12.5rem 12.5rem; */
 
