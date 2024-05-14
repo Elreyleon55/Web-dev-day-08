@@ -97,23 +97,35 @@ a:active {
 @media screen and (min-width: 68em) {
 
 	.site-wrapper {
-		
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 848px) minmax(auto, 22rem) 1fr;
+
+		grid-template-areas: 
+		"header header header header"
+		" . main sidebar . "
+		"footer footer footer footer";
+
+		;
+
 	}
 
 	.site-header {
-		
+		grid-area: "header";
+
+
 	}
 
 	.site-main {
 		
+		grid-area: "main";
 	}
 
 	.site-sidebar {
-		
+		grid-area: "sidebar";
 	}
 
 	.site-footer {
-		
+		grid-area: "footer";
 	}
 
 }
@@ -220,7 +232,7 @@ a.site-name {
 /* Main
 --------------------------------------------- */
 .site-main {
-	padding: 0 5rem;
+
 }
 
 @media (min-width: 68em) {
@@ -250,7 +262,11 @@ a.site-name {
 
    gap: 1rem; 
 	 justify-content: center;
-	 
+
+	 /* these are the default */
+	 align-items: stretch;
+	 justify-content: stretch;
+
 /* grid-template-columns: repeat(4, 12.5rem); */
 
 /* make a;; automatically generated rows 200px each */
