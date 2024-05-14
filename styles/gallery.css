@@ -230,6 +230,13 @@ a.site-name {
 		display: grid;
 		/* create thre colums */
     grid-template-columns: 18.75rem 18.75rem 18.75rem;
+		/* wwe want to create two rows, 200px height each */
+		/* grid-template-rows: 12.5rem 12.5rem; */
+
+
+		/* set all row height based on the content inside the frid items */
+		/* this is a defult value */
+		grid-template-rows: auto auto;
 	}
 
 	.photo-gallery img {
