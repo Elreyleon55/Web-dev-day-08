@@ -247,7 +247,11 @@ a.site-name {
 		/* grid-template-columns: repeat(2, 18.75rem) minmax(18.75rem, 1fr); */
 
 /* create 4 colums, 200px wide each */
-grid-template-columns: repeat(4, 12.5rem);
+
+   gap: 1rem; 
+	 justify-content: center;
+	 
+/* grid-template-columns: repeat(4, 12.5rem); */
 
 /* make a;; automatically generated rows 200px each */
 grid-auto-rows: 12.5rem;
@@ -277,6 +281,8 @@ grid-auto-rows: 12.5rem;
 	}
 
 	.large-image img {
+		object-fit: cover;
+		object-position: left bottom;
 
 	}
 
