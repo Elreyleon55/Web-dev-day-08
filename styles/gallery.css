@@ -239,7 +239,10 @@ a.site-name {
 	/* create three colums, first two 300px and the last one will fill the ramining space */
 	/* teh two will repeat the two first cloums */
 
-	grid-template-columns: repeat(2, 18.75rem) 1fr;
+	/* grid-template-columns: repeat(2, 18.75rem) 1fr; */
+
+	/* create 3 clums, first two are 3--px the last one is minimum 300px and maximim the remaining spcae in the grid container */
+		grid-template-columns: repeat(2, 18.75rem) minmax(18.75rem, 1fr);
 
 		/* wwe want to create two rows, 200px height each */
 		/* grid-template-rows: 12.5rem 12.5rem; */
@@ -248,6 +251,8 @@ a.site-name {
 		/* set all row height based on the content inside the frid items */
 		/* this is a defult value */
 		grid-template-rows: auto auto;
+
+
 	}
 
 	.photo-gallery img {
