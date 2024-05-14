@@ -226,7 +226,10 @@ a.site-name {
 @media (min-width: 68em) {
 
 	.photo-gallery {
-
+		/* create a grid, make all children items */
+		display: grid;
+		/* create thre colums */
+    grid-template-columns: 18.75rem 18.75rem 18.75rem;
 	}
 
 	.photo-gallery img {
